@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(50, 213, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#card {
+  height: 480px;
+  width: 330px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid gray;
+  border-style: outset;
+  overflow: hidden;
+  position: relative;
+}
+
+#storiyan {
+  height: 90px;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #dadada;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+#storiyan::-webkit-scrollbar {
+  display: none;
+}
+
+.story {
+  border: 2px solid red;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50%; */
+  object-fit: cover;
+}
+
+#full-screen {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: none;
+}
